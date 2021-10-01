@@ -1,0 +1,47 @@
+<div class="header-bar" *ngIf="stateService.currentLocation != 'intro'">
+	<!-- [class.hidden]="stateService.currentLocation == 'intro'" -->
+
+<div class="container">
+	
+	<span class="inventory primary-text">
+		Inventory
+	</span>
+
+	<div class="item" [class.not-clickable]="stateService.dialogueActive" (click)="goToMap()">
+		<div class= "tooltip"><img class="icon" src="{{deploypath}}/assets/images/inventory/map.png" alt="Map">
+			<span class="tooltiptext">Map</span>
+		</div>
+	</div>
+
+	<div *ngIf="stateService.inventory.carrots > 0" (click)="itemClick('carrots')" class="item">
+		<div class= "tooltip"><img class="icon" src="{{deploypath}}/assets/images/inventory/carrots.png" alt="Carrots: ">
+			<span class="tooltiptext">Gold</span>
+			{{ stateService.inventory.carrots }}
+		</div>
+	</div>
+	
+
+	<div *ngIf="stateService.inventory.gold > 0" (click)="itemClick('gold')" class="item">
+		<div class= "tooltip"><img class="icon" src="{{deploypath}}/assets/images/inventory/gold.png" alt="Gold: ">
+		<span class="tooltiptext">Gold</span>
+		{{ stateService.inventory.gold }}
+		</div>
+	</div>
+
+	<div *ngIf="stateService.inventory.book > 0" (click)="itemClick('book')" class="item">
+		<div class= "tooltip"><img class="icon" src="{{deploypath}}/assets/images/inventory/book.png" alt="SpellBook: ">
+			<span class="tooltiptext">SpellBook</span>
+		</div>
+	</div>
+
+</div>
+
+<div class="container">
+	<span class="current-task primary-text">
+		{{ stateService.getCurrentTask() }}
+	</span>
+</div>
+
+</div>
+
+<div class="empty-header" *ngIf="stateService.currentLocation == 'intro'"></div>

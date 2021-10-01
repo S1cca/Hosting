@@ -1,0 +1,126 @@
+.location-background {
+    position: absolute;
+    /* background-color: lightskyblue; */
+    width: 100%;
+    height: calc(100% - 112px);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.clickable {
+    z-index: 99;
+    position: absolute;
+    background-color: transparent;
+    /* background-color: red; */
+    cursor: pointer;
+}
+
+.highlighted {
+    background-color: rgba(255,255,255,0);
+    border: 4px solid yellow;
+    border-radius: 10px;
+}
+
+/**
+ * Forest
+ */
+.leaves {
+    top: 62%;
+    left: 25%;
+    width: 70%;
+    height: 24%;
+}
+
+.tree {
+    top: 1%;
+    left: 11%;
+    width: 83%;
+    height: 28%;
+}
+
+/**
+ * Town centre
+ */
+.market {
+    top: 57%;
+    left: 18%;
+    width: 9%;
+    height: 22%;
+}
+
+.lamp {
+    top: 32%;
+    left: 84%;
+    width: 9%;
+    height: 25%;
+}
+
+.clocktower {
+    top: 6%;
+    left: 21%;
+    width: 12%;
+    height: 51%;
+}
+
+.window {
+    top: 7%;
+    left: 68%;
+    width: 12%;
+    height: 71%;
+}
+
+.door {
+    top: 59%;
+    left: 80%;
+    width: 6%;
+    height: 33%;
+}
+
+/**
+ * Market
+ */
+.town {
+    top: 20%;
+    left: 52%;
+    width: 19%;
+    height: 45%;
+}
+
+.newspaper-stand {
+    top: 46%;
+    left: 28%;
+    width: 13%;
+    height: 41%;
+}
+
+.fruit-stand {
+    top: 59%;
+    left: 77%;
+    width: 23%;
+    height: 28%;
+}
+
+/**
+ * Lighthouse
+ */
+.foghorn {
+    top: 1%;
+    left: 37%;
+    width: 17%;
+    height: 32%;
+}
+
+.lighthouseDoor {
+    top: 63%;
+    left: 32%;
+    width: 27%;
+    height: 35%;
+}
+
+.waves {
+    top: 79%;
+    left: 0%;
+    width: 31%;
+    height: 21%;
+}

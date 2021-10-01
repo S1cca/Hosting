@@ -1,0 +1,25 @@
+<div class="map-background" [style.background-image]="'url(' + image + ')'">
+	<div class="location forest" (click)="handleLocationClick('forest')">
+	</div>
+	
+	<div class="location town" (click)="handleLocationClick('town')">
+	</div>
+	
+	<div class="location lighthouse" (click)="handleLocationClick('lighthouse')">
+	</div>
+	
+	<b><app-dialogue 
+		*ngIf="showCantAccessLocationDialogue"
+		[dialogue]="cantAccessLocationDialogue"
+		(finishedDialogue)="showCantAccessLocationDialogue = false">
+	</app-dialogue>
+	</b>
+
+
+	<b><app-dialogue 
+		*ngIf="showLocationUnlockDialogue"
+		[dialogue]="locationUnlockDialogue"
+		(finishedDialogue)="goToClickedLocation()">
+	</app-dialogue>
+	</b>
+</div>

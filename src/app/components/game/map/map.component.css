@@ -1,0 +1,41 @@
+.bold {
+    font-weight: bold;
+}
+.map-background {
+    position: absolute;
+    /* background-color: lightgreen; */
+    width: 100%;
+    height: calc(100% - 112px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.location {
+    position: absolute;
+    /* background-color: red; */
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.forest {
+    top: 7%;
+    left: 27%;
+    width: 34%;
+    height: 34%;
+}
+
+.town {
+    top: 41%;
+    left: 48%;
+    width: 32%;
+    height: 24%;
+}
+
+.lighthouse {
+    top: 65%;
+    left: 27%;
+    width: 28%;
+    height: 26%;
+}
+

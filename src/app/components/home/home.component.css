@@ -1,0 +1,72 @@
+.container {
+    display: block;
+    min-width: 100%;
+    min-height: 100vh;
+    background-color: lightgrey;
+    position: absolute;
+}
+
+.content {
+    display: block;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    color: black;
+}
+
+.logo-container {
+    display: block;
+    width: 350px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.play-button {
+    width: 30%;
+    height: 30px;
+    margin: 30px auto;
+    display: block;
+}
+
+.task {
+    display: block;
+    width: 600px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 40px auto;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.licence {
+    position: absolute;
+    bottom: 10px;
+
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+
+.play-button:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 1s;
+
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}

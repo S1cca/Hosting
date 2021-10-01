@@ -1,0 +1,39 @@
+<div class="container">
+	<div class="content">
+		<h1>
+			PDP Game
+		</h1>
+		<br>
+		<h2>
+			Play in Fullscreen and use headphone for the best experience (Press F11)
+		</h2>
+		
+		<label for="password-input">Passphrase: </label>
+		<input type="text" id="password-input" [(ngModel)]="password">
+	
+		<button class="play-button" (click)="onPlayClick(1)">
+			<b>Part 1</b>
+		</button>
+	
+		<button class="play-button" (click)="onPlayClick(2)">
+			<b>Part 2</b>
+		</button>
+	
+		<button class="play-button" (click)="onPlayClick(3)">
+			<b>Part 3</b>
+		</button>
+	
+		<button class="play-button" (click)="onPlayClick(4)">
+			<b>Part 4</b>
+		</button>
+
+
+		<div class="task" *ngIf="stateService.finishedPart">
+			Your next task: {{ stateService.taskText }}
+		</div>
+
+		<div class="licence">
+			Except where otherwise noted, graphical content on this site is licensed under a Creative Commons Attribution 4.0 International license
+		</div>
+	</div>
+</div>
