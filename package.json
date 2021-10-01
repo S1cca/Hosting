@@ -8,8 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dependencies": {},
     "devDependencies": {}
   },
@@ -19,6 +19,7 @@
     "@angular/common": "^6.1.0",
     "@angular/compiler": "^6.1.0",
     "@angular/core": "^6.1.0",
+    "@angular/fire": "^7.0.4",
     "@angular/forms": "^6.1.0",
     "@angular/http": "^6.1.0",
     "@angular/platform-browser": "^6.1.0",
@@ -51,8 +52,3 @@
     "typescript": "~2.9.2"
   }
 }
-
-
-
-
-
