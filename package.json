@@ -7,7 +7,11 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
+    "dependencies": {},
+    "devDependencies": {}
   },
   "private": true,
   "dependencies": {
@@ -47,3 +51,8 @@
     "typescript": "~2.9.2"
   }
 }
+
+
+
+
+
